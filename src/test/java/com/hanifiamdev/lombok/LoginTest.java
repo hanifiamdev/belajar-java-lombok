@@ -18,4 +18,12 @@ public class LoginTest {
         Assertions.assertEquals("rahasia", login2.getPassword());
     }
 
+    @Test
+    void testToString() {
+
+        var login = Login.create("hanif", "rahasia");
+        System.out.println(login);
+
+    }
+
 }
